@@ -1,0 +1,15 @@
+How to use the System.
+
+1) Put the money received into the constructor of MoneyReceived Class;
+2) Set the money received object as an argument in the PutAllocationInList constructor;
+3) Use the PutAllocationInList constructor to get the list of the allocated buckets;
+4) Get all the previously stored buckets into a list;
+5) Use the AddAllocations class to merge the previous list with the new list, by putting the lists
+    as arguments in the AddAllocations constructor;
+0) Use the AddAllocations object to access the GetBucketTotal method for bucket totals;
+
+Get Spending
+7) Add the spending amount, the bucket name and the list as arguments in the Spending constructor
+8) Check if user can afford by Accessing the canAfford method;
+9) Get the remaining amount by accessing the getRemainingAmount method
+10)

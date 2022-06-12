@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/tvEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        app:layout_constraintLeft_toLeftOf="@id/tvEme"
+        app:layout_constraintTop_toBottomOf="@id/tvEme" />
+
+    <TextView
+        android:id="@+id/tvInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        app:layout_constraintRight_toRightOf="@id/tvInvest"
+        app:layout_constraintTop_toBottomOf="@id/tvInvest" />
+
+    <TextView
+        android:id="@+id/tvNec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Necessities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNecessities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        app:layout_constraintLeft_toLeftOf="@id/tvNec"
+        app:layout_constraintTop_toBottomOf="@id/tvNec" />
+
+    <TextView
+        android:id="@+id/tvFu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNec" />
+
+    <TextView
+        android:id="@+id/tvFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        app:layout_constraintLeft_toLeftOf="@id/tvFu"
+        app:layout_constraintTop_toBottomOf="@id/tvFu" />
+
+    <TextView
+        android:id="@+id/tvInvest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investment"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvFu" />
+
+    <TextView
+        android:id="@+id/tvEme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Emergency"
+        app:layout_constraintLeft_toLeftOf="@id/tvNec"
+        app:layout_constraintTop_toBottomOf="@id/tvNecessities" />
+
+    <TextView
+        android:id="@+id/tvLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learning"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvEme" />
+
+    <TextView
+        android:id="@+id/tvLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        app:layout_constraintRight_toRightOf="@id/tvLearn"
+        app:layout_constraintTop_toBottomOf="@id/tvLearn" />
+
+    <EditText
+        android:id="@+id/etMoneyReceived"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Money Received"
+        app:layout_constraintBottom_toTopOf="@id/bEnter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/bEnterSpending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        app:layout_constraintBottom_toTopOf="@id/etMoneyReceived"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/etSpending"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Spend money"
+        app:layout_constraintBottom_toTopOf="@id/bEnterSpending"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/bEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/bNecessities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Necessities"
+        app:layout_constraintBottom_toTopOf="@+id/bEmergency"
+        app:layout_constraintEnd_toStartOf="@+id/bFun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun"
+        app:layout_constraintEnd_toStartOf="@+id/bInvestment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bNecessities"
+        app:layout_constraintTop_toTopOf="@+id/bNecessities" />
+
+    <Button
+        android:id="@+id/bInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bFun"
+        app:layout_constraintTop_toTopOf="@+id/bFun" />
+
+    <Button
+        android:id="@+id/bEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Emergency"
+        app:layout_constraintBottom_toTopOf="@+id/etSpending"
+        app:layout_constraintEnd_toStartOf="@+id/bLearning"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bEmergency"
+        app:layout_constraintTop_toTopOf="@+id/bEmergency" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
